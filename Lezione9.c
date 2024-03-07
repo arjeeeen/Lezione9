@@ -12,7 +12,7 @@ int main()
 {
     char scelta = {'\0'};
     SceltaGioco();
-    scanf("%c", scelta);
+    scanf(" %c", &scelta);
     if (scelta == 'B')
     {
         printf("E' stato bello vederti qui, ciao.\n");
@@ -22,7 +22,7 @@ int main()
     {
         partitaInAtto();
         SceltaGioco();
-        scanf("%c", scelta);
+        scanf(" %c", &scelta);
     }
 
     return 0;
@@ -46,7 +46,7 @@ int partitaInAtto()
     printf("DOMANDONA NUMERO 1:\n");
     printf("Scegli la corretta capitale dell'Italia:\n");
     printf("A = Roma, B = Napoli, C = Verona\n");
-    scanf("%c", risposta1);
+    scanf("%c", &risposta1);
 
     if (risposta1 == 'A')
     {
@@ -55,7 +55,7 @@ int partitaInAtto()
         printf("DOMANDONA NUMERO 2:\n");
         printf("Scegli la corretta capitale della Francia:\n");
         printf("A = Vicenza, B = Praga, C = Parigi\n");
-        scanf("%c", risposta2);
+        scanf("%c", &risposta2);
 
         if (risposta2 == 'C')
         {
@@ -64,7 +64,7 @@ int partitaInAtto()
             printf("DOMANDONA NUMERO 3:\n");
             printf("Scegli la corretta capitale della Costa d'Avorio:\n");
             printf("A = Belize, B = Yamoussoukro, C = Myanmar\n");
-            scanf("%c", risposta3);
+            scanf("%c", &risposta3);
 
             if (risposta3 == 'B'){
                 printf("BRAVO %s! Hai risposto correttamente a tutto, il tuo punteggio è: %d", inputNome, punteggio);
